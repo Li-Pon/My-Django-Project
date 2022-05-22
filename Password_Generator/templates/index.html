@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #82A284;
+        }
+        h1 {
+            font-size: 36px;
+            color: #7D1E6A;
+        }
+        input {
+            width: 200px;
+            height: 25px;
+            text-align: center;
+            font-size: 22px;
+            border-radius: 15px;
+        }
+        button {
+            border-radius: 7px;
+            width: 160px;
+            height: 30px;
+            font-size: 15px;
+            background-color: #146a17;
+            color: white;
+        }
+        .whole-form {
+            position: absolute;
+            border: 3px solid #000000;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 450px;
+            text-align: center;
+            background-color: #2F8F9D;
+            color: #16003B;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+        .item {
+            padding-bottom: 20px;
+        }
+        .item-label {
+            padding-bottom: 12px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="whole-form">
+        <form action='/result' method='get'>
+            <h1>Password Generator</h1>
+            <div class="item">
+                <div class="item-label">
+                    <label for="letter">How much letters do you want?</label>
+                </div>
+                <div>
+                    <input type="number" name="letter" id="letter" required>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-label">
+                    <label for="number">How much numbers do you want?</label>
+                </div>
+                <div>
+                    <input type="number" name="number" id="number" required>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-label">
+                    <label for="symbol">How much symbols do you want?</label>
+                </div>
+                <div>
+                    <input type="number" name="symbol" id="symbol" required>
+                </div>
+            </div>
+            <div class="item">
+                <button type="submit">Generate Password</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
