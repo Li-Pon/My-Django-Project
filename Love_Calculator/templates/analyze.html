@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono&display=swap" rel="stylesheet">
+    <title>Analyze Love</title>
+    <style>
+        body {
+            font-family: 'Spline Sans Mono', monospace;
+            text-align: center;
+            width: 310px;
+            margin: 180px auto;
+            background-color: #c3ede6;
+        }
+        h1 {
+            font-size: 28px;
+            color: rgb(32, 4, 143);
+        }
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            color: white;
+            background-color: black;
+        }
+        .score {
+            font-size: 50px;
+            color: red;
+        }
+        .credit {
+            margin-top: 100px;
+            letter-spacing: 3px;
+            color: #006006;
+        }
+        .home {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <h1>Your Love score is</h1>
+        </div>
+        <div class="score">
+            <p>{{love_score}}%</p>
+        </div>
+        <div>
+            <h2>{{comment}}</h2>
+        </div>
+        <div>
+            <h3 class="credit">Creator: Li Pon</h3>
+        </div>
+        <div class="home">
+            <a href="/">Home</a>
+        </div>
+    </div>
+</body>
+</html>
